@@ -1,0 +1,26 @@
+.container {
+    height: 90vh;
+    width: 400px;
+    border: 2px solid rgb(6, 20, 85);
+    margin-left: 25rem;
+    background-color: rgb(220, 238, 238);
+    border-radius: 8px;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(6, 20, 85);
+}
+input {
+    border-radius: 6px;
+    background-color: rgb(212, 221, 224);
+}
+button {
+    color: rgbrgb(6, 20, 85);
+    border-radius: 6px;
+}
+ul {
+    color:rgb(6, 20, 85);
+    line-height: 2rem;
+    list-style-type: none;
+}
