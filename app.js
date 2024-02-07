@@ -4,17 +4,19 @@ let ul = document.querySelector("ul");
 
 btn.addEventListener("click", ()=> {
     let list = document.createElement("li");
-    list.innerText = inp.value;
+    list.innerText =  inp.value;
     ul.appendChild(list);
     inp.value = ""; 
     let delbtn = document.createElement("button");
-    delbtn.innerText = "delete";
+    delbtn.innerText = "Remove";
     delbtn.classList.add("del");
     list.appendChild(delbtn);
 });
-//To remove list items.
-ul.addEventListener("click", (event)=> {
+ul.addEventListener("click", (event) => {
     console.dir(event.target);
-    let liItem = event.target.parentElement;
-    liItem.remove();
-})
+    // Check if the clicked element has the class "del"
+    if (event.target.classList.contains("del")) {
+        let liItem = event.target.parentElement;
+        liItem.remove();
+    }
+});
