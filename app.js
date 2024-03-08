@@ -14,7 +14,6 @@ btn.addEventListener("click", ()=> {
 });
 ul.addEventListener("click", (event) => {
     console.dir(event.target);
-    // Check if the clicked element has the class "del"
     if (event.target.classList.contains("del")) {
         let liItem = event.target.parentElement;
         liItem.remove();
